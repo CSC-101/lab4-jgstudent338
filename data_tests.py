@@ -45,3 +45,12 @@ class TestCases(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    def test_first_element(self):
+        result = first_element([[1, 2, 3],[4,5,6], [89, 7]])
+        expected = [1,4,89]
+        self.assertEqual(result, expected)
+
+    def test_first_element(self):
+        result = first_element([[1,2,3],[],[56,4,5]])
+        expected = [1,56]
+        self.assertEqual(result, expected)
